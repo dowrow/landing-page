@@ -1,41 +1,52 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>PAGE_TITLE</title>
+  <meta name="description" content="PAGE_DESCRIPTION">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
   <meta name="theme-color" content="#fafafa">
+  <link href="colors.css" rel="stylesheet">
 </head>
-
 <body>
+  <main class="wrapper">
+    <section class="offer">
+      <img class="offer__image" src="logo.png" alt="Logo"/>
+      <h1 class="offer__title">
+        OFFER_TITLE
+      </h1>
+      <p class="offer__description">
+        OFFER_DESCRIPTION
+      </p>
+    </section>
+    <section class="form">
+      <h2 class="form__title">
+        FORM_TITLE
+      </h2>
+      <p class="form__description">
+        FORM_DESCRIPTION  
+      </p>
+      <form action="FORM_RESPONSE_URL" method="POST">
+        <input class="form__input" type="text" required name="NAME_INPUT" placeholder="Tu nombre (sin apellidos)"/>
+        <input class="form__input" type="email" required name="emailAddress" placeholder="Tu correo electrónico"/>
+        <small class="form__legal">
+            Al hacer clic en el siguiente botón, acepta nuestros términos y condiciones de uso. 
+            Conozca cómo recopilamos, usamos y compartimos sus datos en nuestra <a target="_blank" href="politica-privacidad.txt">política de privacidad.</a>
+        </small>
+        <button class="form__button" type="submit">CALL_TO_ACTION</button>
+      </form>
+    </section>  
+  </main>
   <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <p class="browserupgrade">
+      Estás usando un navegador <strong>obsoleto</strong>.
+      Por favor <a href="browsehappy" target="_blank">actualiza tu navegador</a> para mejorar tu experiencia y seguridad.
+    </p>
   <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="main.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 </body>
-
 </html>
